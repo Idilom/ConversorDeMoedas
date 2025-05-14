@@ -3,8 +3,6 @@ package com.idilom.currencyconverter.terminal;
 import com.idilom.currencyconverter.service.Services;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
 
