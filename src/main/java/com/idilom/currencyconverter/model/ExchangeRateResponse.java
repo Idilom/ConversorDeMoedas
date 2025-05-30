@@ -27,7 +27,5 @@ public class ExchangeRateResponse {
         return result;
     }
 
-    public void setResult(String result) {
-        this.result = result;
-    }
+
 }

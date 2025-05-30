@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h2>Conversor de Moedas</h2>
+
+<label for="from">De:</label>
+<select id="from">
+  <option value="USD">Dólar (USD)</option>
+  <option value="EUR">Euro (EUR)</option>
+  <option value="JPY">Iene (JPY)</option>
+  <option value="BRL">Real (BRL)</option>
+  <option value="GBP">Libra (GBP)</option>
+  <option value="AUD">Dólar Australiano (AUD)</option>
+</select>
+
+<label for="to">Para:</label>
+<select id="to">
+  <option value="BRL">Real (BRL)</option>
+  <option value="USD">Dólar (USD)</option>
+  <option value="EUR">Euro (EUR)</option>
+  <option value="JPY">Iene (JPY)</option>
+  <option value="GBP">Libra (GBP)</option>
+  <option value="AUD">Dólar Australiano (AUD)</option>
+</select>
+
+<label for="amount">Valor:</label>
+<input type="number" id="amount" placeholder="Digite o valor" />
+
+<button onclick="convert()">Converter</button>
+
+<div class="result" id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

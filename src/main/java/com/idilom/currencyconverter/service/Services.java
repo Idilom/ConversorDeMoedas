@@ -11,9 +11,9 @@ import java.net.http.HttpResponse;
 
 public class Services {
 
-    private static final String API_KEY = "e84582aea6cb3ab5bd5c8587";
+    public static final String API_KEY = "YOUR_API_KEY";
 
-    public static double getConversionRate(String from, String to) throws IOException, InterruptedException {
+    public static double getConversionRate (String from, String to) throws IOException, InterruptedException {
         String url = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/" + from;
 
         HttpClient client = HttpClient.newHttpClient();
@@ -27,5 +27,8 @@ public class Services {
             return rateResponse.conversion_rates.get(to);
         }
         return -1;
+
+
     }
+
 }
